@@ -1,1 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300..900&display=swap');
 @import 'tailwindcss';
+
+@theme {
+	--font-red-hat-display: 'Red Hat Display', sans-serif;
+
+	--color-primary: #382ae1;
+	--color-primary-hover: #766cf1;
+
+	--color-muted: #f7f9ff;
+	--color-muted-foreground: #717fa6;
+
+	--color-heading: #1f2e55;
+
+	--shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@layer base {
+	html {
+		font-family: var(--font-red-hat-display);
+		color: var(--color-muted-foreground);
+	}
+
+	body {
+		background-color: #e0e8ff;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: var(--color-heading);
+	}
+
+	button {
+		cursor: pointer;
+	}
+}

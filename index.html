@@ -7,7 +7,41 @@
 		<title>order-summary</title>
 		<link href="/src/style.css" rel="stylesheet" />
 	</head>
-	<body>
-		<h1 class="text-3xl font-bold">Hello world!</h1>
+
+	<body class="relative">
+		<img class="absolute top-0 h-1/4 md:h-1/2 -z-10 w-full" src="./pattern-background.svg" alt="wave background" />
+
+		<main class="min-h-screen px-6 flex items-center justify-center">
+			<article class="max-w-80 bg-white md:max-w-md w-full rounded-[1.25rem] overflow-hidden shadow">
+				<img class="h-40 w-full md:h-56" src="./illustration-hero.svg" alt="dancing girl" />
+
+				<div class="space-y-6 md:space-y-5 py-8 px-6 md:p-12">
+					<section class="space-y-4 text-center">
+						<h1 class="font-black md:text-3xl text-2xl/tight capitalize">order summary</h1>
+						<p class="font-medium md:text-base/relaxed">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+					</section>
+
+					<section>
+						<div class="flex items-center p-4 md:p-6 gap-5 bg-muted justify-between rounded-[11px]">
+							<div class="inline-flex items-center gap-5">
+								<img src="./icon-music.svg" alt="music icon" />
+
+								<div class="space-y-0.5 md:space-y-1.5">
+									<h2 class="font-black capitalize text-sm md:text-base">annual plan</h2>
+									<p class="font-medium text-sm text-muted-foreground md:text-base">$59.99/year</p>
+								</div>
+							</div>
+
+							<button class="underline text-primary hover:text-primary-hover duration-300 transition-colors capitalize text-sm font-bold">change</button>
+						</div>
+					</section>
+
+					<section class="flex flex-col gap-6 md:mt-8 md:gap-8">
+						<button class="py-3.5 rounded-lg shadow text-base/snug bg-primary hover:bg-primary-hover duration-300 transition-colors font-black text-white">Proceed to Payment</button>
+						<button class="capitalize text-base/snug hover:text-heading duration-300 transition-colors font-black text-shadow-muted-foreground">cancel order</button>
+					</section>
+				</div>
+			</article>
+		</main>
 	</body>
 </html>
